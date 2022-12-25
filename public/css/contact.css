@@ -1,0 +1,97 @@
+body {
+    background-image: url(../images/bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form {
+    display: grid;
+    margin: auto;
+    width: 600px;
+    color: #a94c04;
+    padding: 20px;
+}
+
+.form input,
+.form textarea,
+.form label,
+.form button,
+.form span {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.form label {
+    margin-top: 10px;
+}
+
+.form input {
+    height: 40px;
+}
+
+.form textarea,
+.form input {
+    border-radius: 0 10px;
+    padding: 10px;
+    border: 1px solid #a94c04;
+}
+
+.form button {
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+}
+
+.form span label,
+.form span input {
+    display: inline-flex;
+}
+
+.form span label {
+    width: fit-content;
+    padding-right: 5px;
+}
+
+#remember {
+    width: 20px;
+    height: 20px;
+}
+
+
+.container__signin .links,
+.container__signup .links {
+    position: inherit;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.container__signup .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .form {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .form input,
+    .form textarea,
+    .form label {
+        width: 95%;
+    }
+}

@@ -1,0 +1,158 @@
+.container__intro {
+    background-image: linear-gradient(to right, #a94c04, #a9a9a9, #a9a9a9, #a94c04);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 35px 0;
+    box-shadow: 10px 10px 12px 10px #a9a9a9, 0px -5px 5px 5px rgba(53, 49, 43, 0.7);
+}
+
+.container__intro h1 {
+    text-align: center;
+    color: #a94c04;
+    font-size: 50px;
+}
+
+.container__intro p {
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+}
+
+.container__mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__values h2,
+.right__mission h2 {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background: #a94c04;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 8px 20px 20px 8px rgba(245, 168, 101, 0.08), 20px 8px 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0.75;
+}
+
+.card p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container__reason {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right__reason img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 span {
+    color: #a94c04;
+}
+
+.left__reason {
+    text-align: center;
+    padding: 30px;
+}
+
+.reasons {
+    list-style: none;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.reasons li {
+    background: #a9a9a9;
+    border-radius: 20px 0px;
+    border: 3px solid #a94c04;
+    padding: 20px;
+    transition: 250ms step-start ease-in-out;
+}
+
+h4 {
+    text-align: center;
+    padding: 10px;
+}
+
+.reasons li img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.reasons li p {
+    text-align: center;
+}
+
+.reasons li:hover {
+    background: transparent;
+    opacity: 0.7;
+}
+
+.team {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.team li {
+    flex-basis: 33%;
+}
+
+@media (max-width: 768px) {
+    .container__intro {
+        height: fit-content;
+    }
+
+    .container__intro p {
+        padding: 0;
+    }
+
+    .container__mission {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: auto;
+    }
+
+    .container__reason {
+        grid-template-columns: 1fr;
+    }
+
+    .reasons {
+        grid-template-columns: auto;
+    }
+
+    .team {
+        display: grid;
+    }
+}
